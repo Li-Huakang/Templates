@@ -1,0 +1,105 @@
+\documentclass{ctexart}
+\usepackage{amssymb,amsfonts,amsmath,amsthm}
+%--------
+% 设置字体
+%--------
+
+
+
+
+%----------
+% 版面设置
+%----------
+%首段缩进
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}
+
+%行距
+\renewcommand{\baselinestretch}{1.5} % 1.5倍行距
+
+%页边距
+\usepackage[a4paper]{geometry}
+\geometry{verbose,
+  tmargin=2cm,% 上边距
+  bmargin=2cm,% 下边距
+  lmargin=3cm,% 左边距
+  rmargin=3cm % 右边距
+}
+
+
+%----------
+% 其他宏包
+%----------
+\usepackage{enumerate}
+\usepackage{geometry}
+\usepackage{fontspec}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{pdfpages}%插入PDF
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{siunitx}
+\usepackage{hyperref}
+
+\usepackage[
+type={CC},
+modifier={by-nc-sa},
+version={4.0},
+lang={chinese-utf8},
+]{doclicense}
+% cc license
+
+\graphicspath{{figures/}{logo/}}%声明图片和logo目录
+
+%-----------
+%页眉页脚
+%-----------
+\usepackage{fancyhdr}
+\setlength{\headheight}{14pt}
+\pagestyle{fancy}
+\lhead{}
+\chead{\kaishu head}
+\rhead{ }
+\cfoot{\thepage}
+
+
+%-----------
+%取消Section编号
+%-----------
+%\setcounter{secnumdepth}{-2}
+
+
+%-------------
+%公式编号加入节section
+%-------------
+\numberwithin{equation}{section}
+
+
+%-------------
+%new command 公式
+%-------------
+
+
+
+%-----------
+%正文
+%-----------
+
+
+\begin{document}
+
+
+\title{\heiti Title}    
+\author{\kaishu 李华康 \\huakang.li@outlook.com}  
+\date{2020.06}
+\maketitle
+
+
+% \doclicenseThis
+
+
+
+\end{document}
