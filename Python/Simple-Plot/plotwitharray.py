@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import os
 
+plt.style.use(['science','ieee'])
+
 x = [1, 2, 3, 4, 5]
 y = [1, 2, 3, 4, 5]
 
@@ -20,3 +22,5 @@ with plt.style.context(['science','ieee']):
     fig.savefig("figures/"+savename)
     cmd = "SumatraPDF " + "figures/"+savename
     os.system(cmd)
+
+
