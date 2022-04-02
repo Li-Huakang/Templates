@@ -1,0 +1,3 @@
+gpg --keyserver keyserver.ubuntu.com --recv-keys ***
+gpg -a --export *** | sudo apt-key add -
+# *** is the public key
